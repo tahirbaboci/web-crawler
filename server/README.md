@@ -69,4 +69,6 @@ To get the Products from [Samson](https://www.samson.de/en/products-applications
 
 ## Resources
 
-
+-[nestjs](http://nestjs.com/)
+-[x-ray](https://www.npmjs.com/package/x-ray)
+-[jest](https://jestjs.io/)
