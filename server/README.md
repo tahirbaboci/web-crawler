@@ -8,7 +8,7 @@
 
 ## Description
 
-this is a coding challange given by isarbits for Software Developer position.
+This is a coding challange given by isarbits for Software Developer position.
 The topic was to build  a  crawler, which extracts products information from the the two following sites and stores found data in a normalized form:
   - https://www.gefa.com/en/products/
   - https://www.samson.de/en/products-applications/product-selector/
