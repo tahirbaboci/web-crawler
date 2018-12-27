@@ -5,8 +5,8 @@ import { async } from 'rxjs/internal/scheduler/async';
 
 describe('Product Controller', () => {
   let module: TestingModule;
-  
-  
+
+
   let productService: ProductService;
   let productController: ProductController;
 
@@ -28,6 +28,51 @@ describe('Product Controller', () => {
       jest.spyOn(productService, 'getProdLinks').mockImplementation(() => result);
 
       expect(await productService.getProdLinks()).toBe(result);
+    });
+
+  });
+
+
+  describe('getProdInfos', () => {
+
+    it('should return products Info', async () => {
+      const result = {};
+      jest.spyOn(productService, 'getProdInfo').mockImplementation(() => result);
+
+      expect(await productService.getProdInfo()).toBe(result);
+    });
+
+  });
+
+  describe('getSamsonCategoryLinks', () => {
+
+    it('should return the links of categories', async () => {
+      const result = {};
+      jest.spyOn(productService, 'getSamsonProdCategoryLinks').mockImplementation(() => result);
+
+      expect(await productService.getSamsonProdCategoryLinks()).toBe(result);
+    });
+
+  });
+
+  describe('getSamsonProdLinks', () => {
+
+    it('should return the links of the Samson products', async () => {
+      const result = {};
+      jest.spyOn(productService, 'getSamsonProdLinks').mockImplementation(() => result);
+
+      expect(await productService.getSamsonProdLinks()).toBe(result);
+    });
+
+  });
+
+  describe('getSamsonProdInfo', () => {
+
+    it('should return the information of all products', async () => {
+      const result = {};
+      jest.spyOn(productService, 'getSamsonProdInfo').mockImplementation(() => result);
+
+      expect(await productService.getSamsonProdInfo()).toBe(result);
     });
 
   });
